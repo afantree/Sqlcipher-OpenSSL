@@ -390,16 +390,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/rainbird/Desktop/Sqlcipher,
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sqlcipher-acakpwzyyijnodclyuqkhnbewvin/Build/Products/Release-iphoneos",
-					"/Users/rainbird/Desktop/归档/Sqlcipher1.0",
-					"/Users/rainbird/Desktop/归档/OpenSSL1.0.1",
+					"\"$(SRCROOT)/../**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlcipherTest/SqlcipherTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../**",
 				);
 				INFOPLIST_FILE = "SqlcipherTest/SqlcipherTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,16 +413,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/rainbird/Desktop/Sqlcipher,
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sqlcipher-acakpwzyyijnodclyuqkhnbewvin/Build/Products/Release-iphoneos",
-					"/Users/rainbird/Desktop/归档/Sqlcipher1.0",
-					"/Users/rainbird/Desktop/归档/OpenSSL1.0.1",
+					"\"$(SRCROOT)/../**",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlcipherTest/SqlcipherTest-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode5.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../**",
 				);
 				INFOPLIST_FILE = "SqlcipherTest/SqlcipherTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
