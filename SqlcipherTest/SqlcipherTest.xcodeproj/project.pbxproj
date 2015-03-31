@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1435CF781ACA82460039AED1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435CF771ACA82460039AED1 /* libsqlite3.dylib */; };
+		1435CF7A1ACA84AA0039AED1 /* Sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1435CF791ACA84AA0039AED1 /* Sqlcipher.framework */; };
 		EB77F2FE18698767007FB95B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F2FD18698767007FB95B /* Foundation.framework */; };
 		EB77F30018698767007FB95B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F2FF18698767007FB95B /* CoreGraphics.framework */; };
 		EB77F30218698767007FB95B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F30118698767007FB95B /* UIKit.framework */; };
@@ -21,7 +23,6 @@
 		EB77F31F18698768007FB95B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F30118698767007FB95B /* UIKit.framework */; };
 		EB77F32718698768007FB95B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB77F32518698768007FB95B /* InfoPlist.strings */; };
 		EB77F32918698768007FB95B /* SqlcipherTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB77F32818698768007FB95B /* SqlcipherTestTests.m */; };
-		EB77F512186BD358007FB95B /* Sqlcipher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F511186BD358007FB95B /* Sqlcipher.framework */; };
 		EB77F514186BD4FB007FB95B /* OpenSSL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB77F513186BD4FB007FB95B /* OpenSSL.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1435CF771ACA82460039AED1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		1435CF791ACA84AA0039AED1 /* Sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sqlcipher.framework; path = ../Sqlcipher1.1/Sqlcipher.framework; sourceTree = "<group>"; };
 		EB77F2FA18698767007FB95B /* SqlcipherTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SqlcipherTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB77F2FD18698767007FB95B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB77F2FF18698767007FB95B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,7 +58,6 @@
 		EB77F32418698768007FB95B /* SqlcipherTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SqlcipherTestTests-Info.plist"; sourceTree = "<group>"; };
 		EB77F32618698768007FB95B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB77F32818698768007FB95B /* SqlcipherTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SqlcipherTestTests.m; sourceTree = "<group>"; };
-		EB77F511186BD358007FB95B /* Sqlcipher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sqlcipher.framework; path = ../Sqlcipher1.0/Sqlcipher.framework; sourceTree = "<group>"; };
 		EB77F513186BD4FB007FB95B /* OpenSSL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenSSL.framework; path = ../OpenSSL1.0.1/OpenSSL.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1435CF781ACA82460039AED1 /* libsqlite3.dylib in Frameworks */,
 				EB77F30018698767007FB95B /* CoreGraphics.framework in Frameworks */,
 				EB77F30218698767007FB95B /* UIKit.framework in Frameworks */,
 				EB77F2FE18698767007FB95B /* Foundation.framework in Frameworks */,
-				EB77F512186BD358007FB95B /* Sqlcipher.framework in Frameworks */,
+				1435CF7A1ACA84AA0039AED1 /* Sqlcipher.framework in Frameworks */,
 				EB77F514186BD4FB007FB95B /* OpenSSL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,8 +91,6 @@
 		EB77F2F118698767007FB95B = {
 			isa = PBXGroup;
 			children = (
-				EB77F513186BD4FB007FB95B /* OpenSSL.framework */,
-				EB77F511186BD358007FB95B /* Sqlcipher.framework */,
 				EB77F30318698767007FB95B /* SqlcipherTest */,
 				EB77F32218698768007FB95B /* SqlcipherTestTests */,
 				EB77F2FC18698767007FB95B /* Frameworks */,
@@ -109,6 +110,9 @@
 		EB77F2FC18698767007FB95B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1435CF791ACA84AA0039AED1 /* Sqlcipher.framework */,
+				EB77F513186BD4FB007FB95B /* OpenSSL.framework */,
+				1435CF771ACA82460039AED1 /* libsqlite3.dylib */,
 				EB77F2FD18698767007FB95B /* Foundation.framework */,
 				EB77F2FF18698767007FB95B /* CoreGraphics.framework */,
 				EB77F30118698767007FB95B /* UIKit.framework */,
@@ -313,7 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,6 +348,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-DSQLITE_HAS_CODEC";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "armv7 armv7s arm64";
 			};
@@ -353,7 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -377,6 +382,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-DSQLITE_HAS_CODEC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "armv7 armv7s arm64";
@@ -391,7 +397,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sqlcipher-acakpwzyyijnodclyuqkhnbewvin/Build/Products/Release-iphoneos",
-					"\"$(SRCROOT)/../**",
+					"\"$(SRCROOT)/../** /Users/afantree/github/Sqlcipher-OpenSSL/Sqlcipher1.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlcipherTest/SqlcipherTest-Prefix.pch";
@@ -414,7 +420,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Sqlcipher-acakpwzyyijnodclyuqkhnbewvin/Build/Products/Release-iphoneos",
-					"\"$(SRCROOT)/../**",
+					"\"$(SRCROOT)/../** /Users/afantree/github/Sqlcipher-OpenSSL/Sqlcipher1.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SqlcipherTest/SqlcipherTest-Prefix.pch";
